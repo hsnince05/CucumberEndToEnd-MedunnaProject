@@ -25,9 +25,11 @@ public class MedunnaAnasayfa {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     public WebElement SingInButton;
 
-    @FindBy(xpath = "//text()[.='User management']")
+    @FindBy(xpath = "//li[@id='account-menu']")
     public WebElement kullaniciAdi;
 
-
-
+    @FindBy(xpath = "//li[@id='entity-menu']")
+    public WebElement Items;
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[6]")
+    public WebElement room;
 }
